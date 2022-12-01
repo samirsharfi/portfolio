@@ -1,10 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
-import weather from '../public/assets/projects/weather.png';
-import chewy from '../public/assets/projects/chewy.jpeg'
-import netflixImg from '../public/assets/projects/netflix.jpg'
-import twitchImg from '../public/assets/projects/twitch.jpg'
+import weather from '../public/assets/projects/weather.jpg';
+import chewy from '../public/assets/projects/chewy.jpeg';
+import mern from '../public/assets/projects/mern.png';
+
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -17,18 +15,24 @@ const Projects = () => {
         <h2 className='py-4'>What I&apos;ve Built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
-            title='Weather App'
-            backgroundImg={weather}
-            projectUrl='/property'
-            tech='React JS'
+            title='GoalSetter'
+            backgroundImg={mern}
+            projectUrl='/goalSetter'
+            tech='MERN Stack'
           />
           <ProjectItem
             title='Chewy Sweet Factory'
             backgroundImg={chewy}
-            projectUrl='/crypto'
+            projectUrl='/chewy'
             tech='Next JS'
-
           />
+          <ProjectItem
+            title='Weather App'
+            backgroundImg={weather}
+            projectUrl='/weather'
+            tech='React JS'
+          />
+          
         </div>
       </div>
     </div>

@@ -5,7 +5,6 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill, BsFileCodeFill } from "react-icons/bs";
 import { IoCodeWorkingSharp } from "react-icons/io5";
-// import { useRouter } from 'next/router';
 import NavLogo from "../public/navLogo.png";
 
 const Navbar = () => {
@@ -13,23 +12,6 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [linkColor, setLinkColor] = useState("#1f2937");
-  // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
-
-  // useEffect(() => {
-  //   if (
-  //     router.asPath === '/property' ||
-  //     router.asPath === '/crypto' ||
-  //     router.asPath === '/netflix' ||
-  //     router.asPath === '/twitch'
-  //   ) {
-  //     setNavBg('transparent');
-  //     setLinkColor('#ecf0f3');
-  //   } else {
-  //     setNavBg('#ecf0f3');
-  //     setLinkColor('#1f2937');
-  //   }
-  // }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -58,7 +40,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <a>
-            <IoCodeWorkingSharp className="text-[#5651e5]" size={70} />
+            <IoCodeWorkingSharp className=' text-gray-700' size={70} />
             {/* <Image
               src={NavLogo}
               alt='/'
@@ -119,7 +101,7 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-between">
               <Link href="/">
                 <a>
-                  <Image src={NavLogo} width="87" height="35" alt="/" />
+                <IoCodeWorkingSharp className=' text-gray-700' size={70} />
                 </a>
               </Link>
               <div
@@ -130,9 +112,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">
-                Let&#39;s build something legendary together
-              </p>
+  
             </div>
           </div>
           <div className="py-4 flex flex-col">
@@ -174,7 +154,7 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <a
-                  href="https://www.linkedin.com/in/clint-briley-50056920a/"
+                  href="https://www.linkedin.com/in/samir-sharfi-495644235/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -183,7 +163,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href="https://github.com/fireclint"
+                  href="https://github.com/samirsharfi"
                   target="_blank"
                   rel="noreferrer"
                 >

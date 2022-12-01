@@ -3,7 +3,7 @@ import Head from "next/head";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FcDocument } from "react-icons/fc";
 import ProjectItem from "../components/ProjectItem";
-import cv from '../public/assets/cv.png'
+import cv from "../public/assets/cv.png";
 import Image from "next/image";
 const resume = () => {
   return (
@@ -20,7 +20,7 @@ const resume = () => {
       <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
         <h2 className="text-center">Resume</h2>
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
-          <h2 className="text-center">Samir Sharfi</h2>
+          <h2 className="text-center"></h2>
           <div className="flex">
             <a
               href="https://www.linkedin.com/in/samir-sharfi-495644235/"
@@ -38,10 +38,11 @@ const resume = () => {
             </a>
           </div>
         </div>
+
         <div className="flex justify-center ">
-        <Image src={cv} alt='cv' width={700} height={700}/>
+          <Image src={cv} alt="cv" width={700} height={600} />
         </div>
-       </div>
+      </div>
     </>
   );
 };
